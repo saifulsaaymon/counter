@@ -1,27 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 
 function App() {
   return (
-    
-    /* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
+    <>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Navbar <span class="badge bg-secondary">4</span>
+          </a>
+        </div>
+      </nav>
 
-    <h1>Hello World</h1>
+      <button type="button" class="btn btn-primary m-4">
+        Reset
+      </button>
+
+      <ul>
+        <li class="list-unstyled">
+          <div>
+            <span class="badge bg-primary">4</span>
+            <button type="button" class="btn btn-secondary m-2">
+              +
+            </button>
+            <button type="button" class="btn btn-secondary m-2">
+              -
+            </button>
+            <button type="button" class="btn btn-danger m-2">
+              Delete
+            </button>
+          </div>
+        </li>
+
+        <li class="list-unstyled">
+          <div>
+            <span class="badge bg-primary">4</span>
+            <button type="button" class="btn btn-secondary m-2">
+              +
+            </button>
+            <button type="button" class="btn btn-secondary m-2">
+              -
+            </button>
+            <button type="button" class="btn btn-danger m-2">
+              Delete
+            </button>
+          </div>
+        </li>
+
+        <li class="list-unstyled">
+          <div>
+            <span class="badge bg-secondary">Zero</span>
+            <button type="button" class="btn btn-secondary m-2">
+              +
+            </button>
+            <button type="button" class="btn btn-secondary m-2">
+              -
+            </button>
+            <button type="button" class="btn btn-danger m-2">
+              Delete
+            </button>
+          </div>
+        </li>
+      </ul>
+    </>
   );
 }
 
