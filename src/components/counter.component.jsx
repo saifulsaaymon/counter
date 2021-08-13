@@ -89,7 +89,6 @@ class Counter extends Component {
             </div>
           </li> */}
 
-
           {/* Third button 
            <li class="list-unstyled">
             <div>
@@ -105,6 +104,7 @@ class Counter extends Component {
               </button>
             </div>
           </li> */}
+          
         </ul>
       </>
     );
